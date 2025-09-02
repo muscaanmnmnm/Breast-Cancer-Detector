@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BreastCare - Empowering Early Detection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Lato', 'sans-serif'],
+                    },
+                    colors: {
+                        'rose': {
+                            50: '#fff1f2',
+                            100: '#ffe4e6',
+                            200: '#fecdd3',
+                            300: '#fda4af',
+                            400: '#fb7185',
+                            500: '#f43f5e',
+                            600: '#e11d48',
+                            700: '#be123c',
+                            800: '#9f1239',
+                            900: '#881337',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans antialiased">
+    <div class="min-h-screen bg-gradient-to-b from-rose-50 to-pink-50">
+        <!-- Navigation -->
+        <nav class="bg-white/80 backdrop-blur-sm border-b border-rose-100 sticky top-0 z-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-16">
+                    <div class="flex items-center space-x-3">
+                        <!-- NEW: Pink Ribbon Icon -->
+                        <svg class="w-8 h-8 text-rose-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M12 3C12 3 6 8 6 12C6 16 12 21 12 21C12 21 18 16 18 12C18 8 12 3 12 3Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                           <path d="M15 12C15 12 12 15 12 18C12 21 12 21 12 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                           <path d="M9 12C9 12 12 15 12 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="text-xl font-semibold text-rose-800 font-serif">BreastCare</span>
+                    </div>
+                    <div class="hidden md:flex space-x-8">
+                        <a href="#" class="text-rose-700 hover:text-rose-900 font-medium">Home</a>
+                        <a href="#detection-tool" class="text-rose-700 hover:text-rose-900 font-medium">Detection</a>
+                        <a href="#about-model" class="text-rose-700 hover:text-rose-900 font-medium">How it Works</a>
+                        <a href="#prevention" class="text-rose-700 hover:text-rose-900 font-medium">Prevention</a>
+                    </div>
+                    <button class="md:hidden bg-rose-400 hover:bg-rose-500 px-4 py-2 rounded-md text-white font-medium">Menu</button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="relative pt-20 pb-12 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto text-center">
+                 <!-- NEW: Pink Ribbon Icon Above Title -->
+                <div class="inline-block p-4 bg-white rounded-full shadow-md mb-6">
+                    <svg class="w-12 h-12 text-rose-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <path d="M12 3C12 3 6 8 6 12C6 16 12 21 12 21C12 21 18 16 18 12C18 8 12 3 12 3Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                       <path d="M15 12C15 12 12 15 12 18C12 21 12 21 12 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                       <path d="M9 12C9 12 12 15 12 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h1 class="text-4xl md:text-6xl font-bold text-rose-800 mb-6 text-balance font-serif">
+                    Empowering Early Detection
+                </h1>
+                <p class="text-xl text-rose-600 mb-8 text-pretty max-w-2xl mx-auto">
+                    Advanced AI technology to support breast health awareness and early detection. Together, we can make a
+                    difference in the fight against breast cancer.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#detection-tool" class="bg-rose-500 hover:bg-rose-600 text-white px-6 py-3 rounded-md font-medium text-lg shadow-sm">
+                        Start Detection
+                    </a>
+                    <a href="#prevention" class="border border-rose-300 text-rose-700 hover:bg-rose-50 bg-white px-6 py-3 rounded-md font-medium text-lg">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEW: "How Our AI Works" Section -->
+        <section id="about-model" class="py-20 px-4 sm:px-6 lg:px-8 bg-white/70">
+            <div class="max-w-5xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-rose-800 mb-4 font-serif">How Our AI Model Works</h2>
+                    <p class="text-rose-600 text-lg max-w-3xl mx-auto">Our predictor uses a proven machine learning model to analyze diagnostic features. Here’s a simplified look at the process.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8 text-center items-start">
+                    <!-- Step 1 -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-20 h-20 bg-rose-100 rounded-full flex items-center justify-center border-2 border-rose-200 mb-4">
+                            <svg class="w-10 h-10 text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-rose-800 font-serif mb-2">1. You Input Data</h3>
+                        <p class="text-rose-600">You adjust the sliders to provide 30 different measurements from a medical report.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="flex flex-col items-center mt-8 md:mt-0">
+                        <div class="w-20 h-20 bg-rose-100 rounded-full flex items-center justify-center border-2 border-rose-200 mb-4">
+                             <svg class="w-10 h-10 text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-rose-800 font-serif mb-2">2. AI Analysis (KNN)</h3>
+                        <p class="text-rose-600">Our K-Nearest Neighbors model compares your inputs to thousands of diagnosed cases it has learned from.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="flex flex-col items-center mt-8 md:mt-0">
+                        <div class="w-20 h-20 bg-rose-100 rounded-full flex items-center justify-center border-2 border-rose-200 mb-4">
+                            <svg class="w-10 h-10 text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-rose-800 font-serif mb-2">3. Instant Prediction</h3>
+                        <p class="text-rose-600">The model instantly predicts whether the data points to a benign or malignant case with a confidence score.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI-Powered Detection Tool Section -->
+        <section id="detection-tool" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+             <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-rose-800 mb-4 font-serif">AI-Powered Detection Tool</h2>
+                    <p class="text-rose-600 text-lg max-w-3xl mx-auto">
+                        Adjust the sliders below to input the diagnostic measurements. Our trained model will provide an instant prediction based on the data. The initial values are set to the average for benign cases.
+                    </p>
+                </div>
+
+                <form id="prediction-form" class="max-w-4xl mx-auto">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-6 mb-8 form-grid">
+                        <!-- Sliders will be dynamically generated here by JavaScript -->
+                    </div>
+                    <button type="submit" class="w-full bg-rose-500 hover:bg-rose-600 text-white px-6 py-4 rounded-md font-medium text-xl">
+                        Predict Diagnosis
+                    </button>
+                </form>
+
+                <div id="result-section" class="mt-12 max-w-2xl mx-auto hidden">
+                    <div id="prediction-output" class="p-8 rounded-lg text-center transition-all duration-300">
+                        <h3 id="result-text" class="text-3xl font-bold font-serif"></h3>
+                        <p id="confidence-text" class="text-lg mt-2"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- NEW: "Prevention & Awareness" Section -->
+        <section id="prevention" class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-rose-100 to-pink-100">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-rose-800 mb-4 font-serif">Prevention & Key Facts</h2>
+                    <p class="text-rose-600 text-lg max-w-3xl mx-auto">While not all breast cancers can be prevented, you can take steps to lower your risk. Here are some key facts and tips.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Fact Card 1 -->
+                    <div class="bg-white/80 p-6 rounded-lg border border-rose-200 shadow-sm">
+                        <h3 class="font-serif font-semibold text-rose-800 text-xl mb-3">Early Detection is Key</h3>
+                        <p class="text-rose-700">When caught in its earliest, localized stage, the 5-year relative survival rate is 99%.</p>
+                    </div>
+                    <!-- Fact Card 2 -->
+                    <div class="bg-white/80 p-6 rounded-lg border border-rose-200 shadow-sm">
+                        <h3 class="font-serif font-semibold text-rose-800 text-xl mb-3">Regular Exercise</h3>
+                        <p class="text-rose-700">Studies show that moderate to vigorous physical activity is linked to a lower risk of breast cancer.</p>
+                    </div>
+                    <!-- Fact Card 3 -->
+                    <div class="bg-white/80 p-6 rounded-lg border border-rose-200 shadow-sm">
+                        <h3 class="font-serif font-semibold text-rose-800 text-xl mb-3">Healthy Diet</h3>
+                        <p class="text-rose-700">A diet rich in vegetables, fruit, and whole grains can help maintain a healthy weight and lower risk.</p>
+                    </div>
+                    <!-- Fact Card 4 -->
+                    <div class="bg-white/80 p-6 rounded-lg border border-rose-200 shadow-sm">
+                        <h3 class="font-serif font-semibold text-rose-800 text-xl mb-3">Know Your Normal</h3>
+                        <p class="text-rose-700">Perform monthly self-examinations to become familiar with your breasts so you can notice any changes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-16 px-4 sm:px-6 lg:px-8 bg-rose-500">
+             <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-bold text-white mb-4 font-serif">Ready to Take Action?</h2>
+                <p class="text-rose-100 text-lg mb-8 max-w-2xl mx-auto">
+                    Use our AI-powered detection tool to analyze diagnostic measurements and support early detection awareness.
+                </p>
+                <a href="#detection-tool" class="bg-white text-rose-600 hover:bg-rose-50 px-8 py-3 rounded-md font-medium text-lg shadow-md">
+                    Try the Detection Tool
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-rose-50 border-t border-rose-100 py-12 px-4 sm:px-6 lg:px-8">
+             <div class="max-w-7xl mx-auto">
+                <div class="text-center">
+                    <h3 class="text-lg font-semibold text-rose-800 mb-2 font-serif">
+                        Together for awareness and early detection
+                    </h3>
+                    <p class="text-rose-600 mb-6">Supporting breast health through technology and education. This tool is for educational purposes and not a substitute for professional medical advice.</p>
+                    <div class="flex justify-center space-x-6 text-sm text-rose-500">
+                        <span>Email: support@breastcare.com</span>
+                        <span>Phone: (555) 123-4567</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC FOR THE PREDICTOR (NO CHANGES NEEDED HERE) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // --- Feature Metadata for Sliders ---
+            const featureMetadata = {
+                'radius_mean': { min: 6, max: 29, value: 12.1, step: 0.1, label: 'Radius (Mean)' },
+                'texture_mean': { min: 9, max: 40, value: 17.9, step: 0.1, label: 'Texture (Mean)' },
+                'perimeter_mean': { min: 43, max: 189, value: 78.1, step: 0.1, label: 'Perimeter (Mean)' },
+                'area_mean': { min: 140, max: 2505, value: 462.8, step: 1, label: 'Area (Mean)' },
+                'smoothness_mean': { min: 0.05, max: 0.17, value: 0.09, step: 0.001, label: 'Smoothness (Mean)' },
+                'compactness_mean': { min: 0.01, max: 0.35, value: 0.08, step: 0.001, label: 'Compactness (Mean)' },
+                'concavity_mean': { min: 0, max: 0.43, value: 0.04, step: 0.001, label: 'Concavity (Mean)' },
+                'concave points_mean': { min: 0, max: 0.21, value: 0.025, step: 0.001, label: 'Concave Points (Mean)' },
+                'symmetry_mean': { min: 0.1, max: 0.31, value: 0.17, step: 0.001, label: 'Symmetry (Mean)' },
+                'fractal_dimension_mean': { min: 0.04, max: 0.1, value: 0.06, step: 0.001, label: 'Fractal Dimension (Mean)' },
+                'radius_se': { min: 0.1, max: 2.9, value: 0.28, step: 0.01, label: 'Radius (SE)' },
+                'texture_se': { min: 0.3, max: 5, value: 1.2, step: 0.01, label: 'Texture (SE)' },
+                'perimeter_se': { min: 0.7, max: 22, value: 2.0, step: 0.1, label: 'Perimeter (SE)' },
+                'area_se': { min: 6, max: 545, value: 21.1, step: 1, label: 'Area (SE)' },
+                'smoothness_se': { min: 0.001, max: 0.04, value: 0.007, step: 0.0001, label: 'Smoothness (SE)' },
+                'compactness_se': { min: 0.002, max: 0.14, value: 0.02, step: 0.0001, label: 'Compactness (SE)' },
+                'concavity_se': { min: 0, max: 0.4, value: 0.02, step: 0.001, label: 'Concavity (SE)' },
+                'concave points_se': { min: 0, max: 0.06, value: 0.009, step: 0.0001, label: 'Concave Points (SE)' },
+                'symmetry_se': { min: 0.007, max: 0.08, value: 0.02, step: 0.0001, label: 'Symmetry (SE)' },
+                'fractal_dimension_se': { min: 0.0008, max: 0.03, value: 0.003, step: 0.0001, label: 'Fractal Dimension (SE)' },
+                'radius_worst': { min: 7, max: 37, value: 13.3, step: 0.1, label: 'Radius (Worst)' },
+                'texture_worst': { min: 12, max: 50, value: 23.5, step: 0.1, label: 'Texture (Worst)' },
+                'perimeter_worst': { min: 50, max: 252, value: 87.0, step: 0.1, label: 'Perimeter (Worst)' },
+                'area_worst': { min: 185, max: 4255, value: 558.9, step: 1, label: 'Area (Worst)' },
+                'smoothness_worst': { min: 0.07, max: 0.23, value: 0.12, step: 0.001, label: 'Smoothness (Worst)' },
+                'compactness_worst': { min: 0.02, max: 1.06, value: 0.18, step: 0.001, label: 'Compactness (Worst)' },
+                'concavity_worst': { min: 0, max: 1.26, value: 0.17, step: 0.001, label: 'Concavity (Worst)' },
+                'concave points_worst': { min: 0, max: 0.3, value: 0.07, step: 0.001, label: 'Concave Points (Worst)' },
+                'symmetry_worst': { min: 0.15, max: 0.67, value: 0.27, step: 0.001, label: 'Symmetry (Worst)' },
+                'fractal_dimension_worst': { min: 0.05, max: 0.21, value: 0.07, step: 0.001, label: 'Fractal Dimension (Worst)' },
+            };
+
+            const formGrid = document.querySelector('.form-grid');
+            for (const name in featureMetadata) {
+                const meta = featureMetadata[name];
+                const formControl = document.createElement('div');
+                formControl.innerHTML = `
+                    <label for="${name}" class="block text-sm font-medium text-rose-700 mb-1">${meta.label}</label>
+                    <div class="flex items-center space-x-3">
+                        <input type="range" id="${name}" name="${name}" min="${meta.min}" max="${meta.max}" value="${meta.value}" step="${meta.step}" class="w-full h-2 bg-rose-200 rounded-lg appearance-none cursor-pointer focus:outline-none focus:ring-2 focus:ring-rose-400">
+                        <span id="${name}-value" class="text-sm font-semibold text-rose-800 w-16 text-right">${meta.value}</span>
+                    </div>
+                `;
+                formGrid.appendChild(formControl);
+
+                const slider = formControl.querySelector('input[type="range"]');
+                const valueSpan = formControl.querySelector(`#${name}-value`);
+                slider.addEventListener('input', () => {
+                    valueSpan.textContent = parseFloat(slider.value).toFixed(4).replace(/\.?0+$/, '');
+                });
+            }
+
+            const form = document.getElementById('prediction-form');
+            const resultSection = document.getElementById('result-section');
+            const resultText = document.getElementById('result-text');
+            const confidenceText = document.getElementById('confidence-text');
+            const resultBox = document.getElementById('prediction-output');
+
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+                const formData = new FormData(form);
+                fetch('/predict', { 
+                    method: 'POST', 
+                    body: formData 
+                })
+                .then(response => response.json())
+                .then(data => {
+                    resultSection.classList.remove('hidden');
+                    if (data.error) {
+                        resultText.textContent = `Error: ${data.error}`;
+                        confidenceText.textContent = '';
+                        resultBox.className = 'p-8 rounded-lg text-center transition-all duration-300 bg-yellow-100 text-yellow-800 border border-yellow-200';
+                    } else {
+                        resultText.textContent = `Predicted Diagnosis: ${data.prediction}`;
+                        confidenceText.textContent = `Confidence: ${data.confidence}`;
+                        if (data.prediction === 'Malignant') {
+                            resultBox.className = 'p-8 rounded-lg text-center transition-all duration-300 bg-rose-100 text-rose-900 border border-rose-200 shadow-lg';
+                        } else {
+                            resultBox.className = 'p-8 rounded-lg text-center transition-all duration-300 bg-green-100 text-green-900 border border-green-200 shadow-lg';
+                        }
+                    }
+                    resultSection.scrollIntoView({ behavior: 'smooth' });
+                })
+                .catch(error => {
+                    resultSection.classList.remove('hidden');
+                    resultText.textContent = `Request failed: ${error}`;
+                    confidenceText.textContent = '';
+                    resultBox.className = 'p-8 rounded-lg text-center transition-all duration-300 bg-yellow-100 text-yellow-800 border border-yellow-200';
+                    resultSection.scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
